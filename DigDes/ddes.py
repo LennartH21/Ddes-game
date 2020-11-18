@@ -295,7 +295,7 @@ def blueturn():
                             screen.blit(board, (0, 0))
                             pygame.display.update()
                             blueplayer(bluetilenum)
-                            return "Hey Mr. Hare, the exit button won't work any other way so I just put this here :/"
+                            return "lazy way to end function"
     
     rolltext = rollfont.render("You rolled a " + str(playerrolled), True, (0, 0, 0))
     screen.blit(rolltext, (355,300))
@@ -303,7 +303,7 @@ def blueturn():
     pygame.time.wait(5000)
     screen.blit(board, [0, 0])
     pygame.display.update()
-    return "this is purely because the close function stops working if I don't do this, also hello Mr. Hare, sorry for the inefficient code."
+    return "again"
                     
 def greenturn():
     global greentilenum
@@ -312,6 +312,7 @@ def greenturn():
     greenplayer(greentilenum)
 
 def yellowturn():
+   
     global yellowtilenum
     yellowrolled = random.randint(1, 6)
     yellowtilenum+=yellowrolled
